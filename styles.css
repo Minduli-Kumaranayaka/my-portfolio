@@ -1,0 +1,220 @@
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #2A3439;
+    color: white;
+}
+a { text-decoration: none; }
+
+/* Navigation */
+nav {
+    background-color: #2A3439;
+    padding: 15px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.logo { font-weight: bold; color: #4eb1ff; }
+.nav-links { display: flex; gap: 50px; }
+.nav-links a {
+    font-weight: 500;
+    color: white;
+    transition: color 0.3s;
+}
+.nav-links a:hover { color: #4eb1ff; }
+
+/* Intro Section */
+.intro { text-align: center; padding: 60px 20px 40px; }
+.profile-pic {
+    width: 280px; height: 280px; object-fit: cover;
+    border-radius: 15px;box-shadow: 0 0 20px #4eb1ff, 0 0 40px #4eb1ff;
+}
+.intro h1 {
+    color: #4eb1ff; font-size: 2.5em; margin: 50px 0 20px;
+}
+.subtitle { font-size: 1.1em; color: #ddd; margin-bottom: 20px;  }
+
+
+/*  About Section */
+#about {
+    padding: 30px 20px;
+    background-color: #2A3439;
+    text-align: center;
+    max-width: 900px; margin: auto;
+    line-height: 1.6;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4)
+    ;
+}
+.about-title {
+    font-size: 2em; color: #4eb1ff;
+    margin-bottom: 40px;}
+
+/* Skills Section  */
+
+#skills { text-align: center; padding: 60px 20px;}
+.section-title {
+    font-size: 2em; color: #4eb1ff;
+    margin-bottom: 40px;
+    
+}
+.skills-container {
+    display: flex; justify-content: center;
+    gap: 30px; flex-wrap: wrap;
+    
+}
+.skill-box {
+    background: #2A3439;
+    border: 2px solid #4eb1ff;
+    border-radius: 12px;
+    padding: 20px;
+    width: 280px;
+    
+}
+.skill-heading {
+    background: #525456;
+    padding: 8px; border-radius: 5px;
+    font-size: 1.2em; margin-bottom: 15px;
+}
+.skill-box p { margin-bottom: 15px; font-size: 0.95em; }
+.skill-box button {
+    display: block; width: 100%;
+    padding: 10px; margin: 8px 0;
+    background: white; color: black;
+    border: none; border-radius: 8px;
+    cursor: default;
+}
+.skill-box .highlight {
+    background: #4eb1ff; color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.skill-box .highlight:hover { background: #2b80cc; }
+
+/* Video Editing Section */
+
+#video-editing { padding: 60px 20px; text-align: center; }
+.video-desc { max-width: 800px; margin: auto; margin-bottom: 40px; }
+.video-container {
+    display: flex; justify-content: center;
+    gap: 30px; flex-wrap: wrap;
+}
+.video-box {
+    background: #2A3439; padding: 20px;
+    border-radius: 12px;
+    width: 280px; text-align: center;
+}
+.logo-circle {
+    width: 200px; height: 200px;
+    border-radius: 100%;
+}
+.project img {
+    width: 100%; border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.project img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+}
+.reviews .review {
+    margin: 10px 0; border-radius: 8px;
+}
+.reviews .review img {
+    width: 100%; border-radius: 8px;
+}
+
+
+/* Blog Section */
+
+.blog{
+    max-width: 900px;
+    margin: 60px auto;
+    text-align: center;
+    padding: 0 20px;
+}
+.blog-cover {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 600px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.blog-cover img {
+    width: 100%;
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.blog-cover:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+}
+.blog-description {
+    font-size: 1.1em;
+    color: #ddd;
+    line-height: 1.6;
+}
+
+
+/* Contact Section */
+    .contact{
+        max-width: 600px;
+        margin: 60px auto;
+        padding: 40px;
+        background-color: #2A3439;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+        border-radius: 10px;
+        text-align: center;
+    }
+    .contact h2 {
+        color: #4eb1ff;
+        margin-bottom: 20px;
+    }
+    .contact form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .contact input, 
+    .contact textarea {
+        padding: 12px;
+        border-radius: 8px;
+        border: none;
+        outline: none;
+        font-size: 1em;
+        resize: none;
+    }
+    .contact input:focus,
+    .contact textarea:focus {
+        box-shadow: 0 0 8px #4eb1ff;
+    }
+    .contact button {
+        padding: 12px;
+        background-color: #4eb1ff;
+        border: none;
+        border-radius: 25px;
+        color: white;
+        font-size: 1em;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    .contact button:hover {
+        background-color: #2b80cc;
+    }
+    .success-message {
+        margin-top: 15px;
+        color: #00ff99;
+        font-weight: bold;
+    }
+
+    /* Footer*/
+    footer {
+    background: #1f1f1f;
+    padding: 5px; text-align: center;
+    color: #aaa; margin-top: 20px;
+}

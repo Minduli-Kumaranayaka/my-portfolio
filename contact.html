@@ -1,116 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-<meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Contact - Minduli Kumaranayaka</title>
-<style>
-    body {
-        margin: 0;
-        font-family: 'Poppins', sans-serif;
-        background-color: #2A3439;
-        color: white;
-    }
-    a {
-        text-decoration: none;
-        color: inherit;
-    }
-
-    /* Navbar */
-    nav {
-        background-color: #2A3439;
-        padding: 15px 50px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-        position: sticky;
-        top: 0;
-        z-index: 10;
-    }
-    .logo {
-        font-weight: bold;
-        color: #4eb1ff;
-    }
-    .nav-links {
-        display: flex;
-        gap: 50px;
-    }
-    .nav-links a {
-        font-weight: 500;
-        color: white;
-        transition: color 0.3s;
-    }
-    .nav-links a:hover {
-        color: #4eb1ff;
-    }
-
-    /* Contact Section */
-    .contact-container {
-        max-width: 600px;
-        margin: 60px auto;
-        padding: 40px;
-        background-color: #2A3439;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.4);
-        border-radius: 10px;
-        text-align: center;
-    }
-    .contact-container h2 {
-        color: #4eb1ff;
-        margin-bottom: 20px;
-    }
-    .contact-container form {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-    }
-    .contact-container input, 
-    .contact-container textarea {
-        padding: 12px;
-        border-radius: 8px;
-        border: none;
-        outline: none;
-        font-size: 1em;
-        resize: none;
-    }
-    .contact-container input:focus,
-    .contact-container textarea:focus {
-        box-shadow: 0 0 8px #4eb1ff;
-    }
-    .contact-container button {
-        padding: 12px;
-        background-color: #4eb1ff;
-        border: none;
-        border-radius: 25px;
-        color: white;
-        font-size: 1em;
-        cursor: pointer;
-        transition: background-color 0.3s;
-    }
-    .contact-container button:hover {
-        background-color: #2b80cc;
-    }
-    .success-message {
-        margin-top: 15px;
-        color: #00ff99;
-        font-weight: bold;
-    }
-</style>
+<title>Contact</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<!-- Navbar -->
 <nav>
     <div class="logo">PORTFOLIO</div>
     <div class="nav-links">
-        <a href="porfoliowebsite.html">Home</a>
-        <a href="YOUR_MEDIUM_BLOG_LINK" target="_blank">Blog</a>
+        <a href="index.html">Home</a>
+        <a href="blog.html" target="_self">Blog</a>
         <a href="contact.html">Contact</a>
     </div>
 </nav>
 
-<!-- Contact Section -->
-<section class="contact-container">
+<section class="contact">
     <h2>Contact Me</h2>
     <form id="contactForm">
         <input type="text" id="name" placeholder="Your Name" required>
@@ -120,7 +25,7 @@
         <button type="submit">Send Message</button>
     </form>
     <div class="success-message" id="successMessage" style="display:none;">
-        Thank you! Your message has been received.
+        Thank you! Your message received.
     </div>
 </section>
 
@@ -129,11 +34,13 @@
     const successMessage = document.getElementById('successMessage');
 
     form.addEventListener('submit', function(e) {
-        e.preventDefault(); // prevent actual form submission
+        e.preventDefault();
         successMessage.style.display = 'block';
-        form.reset(); // clear form fields
+        form.reset();
     });
 </script>
-
+<footer>
+    <p>© 2025 Minduli Kumaranayaka | All Rights Reserved</p>
+</footer>
 </body>
 </html>

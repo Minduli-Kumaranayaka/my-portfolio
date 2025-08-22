@@ -1,126 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-<meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Minduli Kumaranayaka - Portfolio</title>
-<style>
-    /* ===== Base Styles ===== */
-    body {
-        margin: 0;
-        font-family: 'Poppins', sans-serif;
-        background-color: #2A3439;
-        color: white;
-    }
-    a {
-        text-decoration: none;
-        color: inherit;
-    }
-
-    /* ===== Navbar ===== */
-    nav {
-        background-color: #2A3439;
-        padding: 15px 50px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-        position: sticky;
-        top: 0;
-        z-index: 10;
-    }
-    .logo {
-        font-weight: bold;
-        color: #4eb1ff;
-    }
-    .nav-links {
-        display: flex;
-        gap: 50px;
-    }
-    .nav-links a {
-        font-weight: 500;
-        color: white;
-        transition: color 0.3s;
-    }
-    .nav-links a:hover {
-        color: #4eb1ff;
-    }
-
-    /* ===== Hero Section ===== */
-    .hero {
-        text-align: center;
-        padding: 60px 20px 40px; /* Reduced bottom padding */
-    }
-    .profile-pic {
-        width: 280px;
-        height: 280px;
-        object-fit: cover;
-        border-radius: 15px;
-        box-shadow: 0 0 20px #4eb1ff, 0 0 40px #4eb1ff;
-    }
-    .hero h1 {
-        color: #4eb1ff;
-        font-size: 2.5em;
-        margin: 20px 0 20px;
-    }
-    .subtitle {
-        font-size: 1.1em;
-        color: #ddd;
-        margin-bottom: 20px; /* Less space below subtitle */
-    }
-    .about-btn {
-        padding: 10px 20px;
-        background-color: #4eb1ff;
-        color: white;
-        border: none;
-        border-radius: 25px;
-        font-size: 1em;
-        cursor: pointer;
-        transition: background-color 0.3s;
-    }
-    .about-btn:hover {
-        background-color: #2b80cc;
-    }
-
-    /* ===== About Section ===== */
-    #about {
-        padding: 40px 20px; /* Reduced padding */
-        background-color: #2A3439;
-        text-align: center;
-        max-width: 900px;
-        margin: auto;
-        line-height: 1.6;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.4); /* Box shadow added */
-        border-radius: 10px; /* Rounded corners for nice look */
-    }
-</style>
+<title>Portfolio</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<!-- Navbar -->
 <nav>
     <div class="logo">PORTFOLIO</div>
     <div class="nav-links">
         <a href="#">Home</a>
-        <a href="YOUR_MEDIUM_BLOG_LINK" target="_blank">Blog</a>
-        <a href="contact.html">Contact</a>
+        <a href="blog.html" target="_self">Blog</a>
+        <a href="contact.html" target="_self">Contact</a>
     </div>
 </nav>
 
-<!-- Hero Section -->
-<section class="hero">
-    <img src="face.jpg" alt="Minduli Kumaranayaka" class="profile-pic">
+
+<section class="intro">
+    <img src="assets/face.jpg" alt="Minduli Kumaranayaka" class="profile-pic">
     <h1>MINDULI KUMARANAYAKA</h1>
-    <div class="subtitle">| IT Undergraduate | Video Editor | Passionate About Tech, Creativity & Innovation |</div>
-    <a href="#about"><button class="about-btn">ABOUT ME</button></a>
+    <div class="subtitle">| IT Undergraduate | Video Editor | Passionate About Tech, Creativity & Innovation </div>
+    
 </section>
 
-<!-- About Section -->
+
 <section id="about">
-    <p>I'm an undergraduate pursuing a BSc (Hons) in Information Technology and Management at the University of Moratuwa, with a deep passion for technology, creativity, and digital innovation.</p>
-    <p>For the past 4 years, I've worked as a freelance video editor and content creator, helping brands and individuals tell compelling visual stories. I specialize in turning ideas into engaging content through a mix of editing skill, creative vision, and attention to detail.</p>
-    <p>Beyond editing, I'm driven by curiosity and inspired by everything related to technology. I'm always eager to learn, collaborate, and build. Whether it's building tech solutions, experimenting with new platforms, or learning something new, I thrive at the intersection of tech and creativity.</p>
+    <h2 class="about-title">ABOUT ME</h2>
+    <p>I'm an undergraduate pursuing a BSc (Hons) in Information Technology and Management at the University of Moratuwa, <br>with a deep passion for technology, creativity, and digital innovation.</p>
+    <p>For the past 4 years, I've worked as a freelance video editor and content creator,<br> helping brands and individuals tell compelling visual stories. I specialize in turning ideas into engaging content through <br>a mix of editing skill, creative vision, and attention to detail.</p>
+    <p>Beyond editing, I'm driven by curiosity and inspired by everything related to technology.<br> I'm always eager to learn, collaborate, and build. Whether it's building tech solutions, experimenting with new platforms, or learning something new, I thrive at the intersection of tech and creativity.</p>
 </section>
+
+
+<section id="skills">
+    <h2 class="section-title">SKILLS</h2>
+    <div class="skills-container">
+        <div class="skill-box">
+            <h3 class="skill-heading">Programming Skills</h3>
+            <h6>Writing code to solve problems and build applications</h6>
+            <button>C</button>
+            <button>Python</button>
+            <button>Java</button>
+            <button>JavaScript</button>
+        </div>
+        <div class="skill-box">
+            <h3 class="skill-heading">Creative Skills</h3>
+            <h6>Designing and producing engaging <br>visuals, videos, and digital content </h6>
+            <button>Graphic Design</button>
+            <a href="#video-editing"><button class="highlight">Video Editing</button></a>
+            <button>Photo Editing</button>
+            <button>Content Creation</button>
+            <button>Motion Graphics</button>
+        </div>
+        <div class="skill-box">
+            <h3 class="skill-heading">Web Development Skills</h3>
+            <h6>Building responsive and user-friendly websites</h6>
+            <button>HTML</button>
+            <button>CSS</button>
+            <button>JavaScript</button>
+            <button>GitHub</button>
+        </div>
+    </div>
+</section>
+
+
+<section id="video-editing">
+    <h2 class="section-title">VIDEO EDITING</h2>
+    <p class="video-desc">For the past 4 years, I’ve been working as a freelance video editor and content creator on Fiverr. <br>
+    As a Level 2 Seller, I have completed 50+ projects with consistent 5-star ratings, helping brands and individuals bring their ideas to life through engaging and creative video content.</p>
+
+    <div class="video-container">
+
+        <div class="video-box logo-rect">
+            <h4>FIVERR PROFILE LOGO</h4>
+            <img src="assets\filogo.jpeg" alt="Video Editing Logo" class="logo-circle">
+            
+        </div>
+        <div class="video-box project">
+            <h4>CLIENT PROJECT</h4>
+            <a href="https://youtu.be/UXruDSRoDb0?si=Ue6Ozyjmd4QJwQgm" target="_blank">
+                <img src="assets\thumbnail.jpeg" alt="Client Project Thumbnail">
+            </a>
+            
+        </div>
+        <div class="video-box reviews">
+            <h4>CLIENT REVIEWS</h4>
+            <div class="review">
+                <img src="assets\review (1).jpeg" alt="Client Review 1">
+            <div class="review">
+                <img src="assets\review (3).jpeg" alt="Client Review 3">
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Minduli Kumaranayaka | All Rights Reserved</p>
+</footer>
 
 </body>
 </html>
+
